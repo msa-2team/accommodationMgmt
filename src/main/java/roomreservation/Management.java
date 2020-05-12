@@ -57,7 +57,7 @@ public class Management {
     @PostPersist
     public void onPostPersist(){
 
-        RoomConfirmed r = new RoomConfirmed();
+/*        RoomConfirmed r = new RoomConfirmed();
         r.setReservationId(this.getReservationId());
         r.setCustomerName(this.getCustomerName());
         r.setCardInfo(this.getCardInfo());
@@ -79,7 +79,9 @@ public class Management {
         outputChannel.send(MessageBuilder
                 .withPayload(json)
                 .setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
-                .build());
+                .build());*/
+
+
     }
 
 
