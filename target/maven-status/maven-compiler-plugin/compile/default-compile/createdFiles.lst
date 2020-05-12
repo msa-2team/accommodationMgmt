@@ -1,6 +1,8 @@
 roomreservation\Management.class
 roomreservation\ManagementListRepository.class
+roomreservation\Payment.class
 roomreservation\ManagementListViewHandler.class
+roomreservation\PaymentService.class
 roomreservation\Reserved.class
 roomreservation\ManagementController.class
 roomreservation\AbstractEvent.class

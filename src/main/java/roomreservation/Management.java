@@ -5,6 +5,7 @@ import javax.persistence.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.messaging.Processor;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
@@ -81,6 +82,13 @@ public class Management {
                 .setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
                 .build());*/
 
+
+        PaymentService paymentService = Application.applicationContext.getBean(PaymentService.class);
+
+        Payment payment = new Payment();
+        payment.setCustomerName(this.getCustomerName());
+        payment.setPaymentStatus(this.getCardInfo());
+        paymentService.requestPayment( payment);
 
     }
 
