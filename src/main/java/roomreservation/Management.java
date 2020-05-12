@@ -30,7 +30,7 @@ public class Management {
     @PostRemove
     public void onPostRemove(){
         RoomRejected r = new RoomRejected();
-        r.setReservationId(this.getId());
+        r.setReservationId(this.getReservationId());
         r.setCustomerName(this.getCustomerName());
         r.setCardInfo(this.getCardInfo());
         ObjectMapper objectMapper = new ObjectMapper();
@@ -58,7 +58,7 @@ public class Management {
     public void onPostPersist(){
 
         RoomConfirmed r = new RoomConfirmed();
-        r.setReservationId(this.getId());
+        r.setReservationId(this.getReservationId());
         r.setCustomerName(this.getCustomerName());
         r.setCardInfo(this.getCardInfo());
         ObjectMapper objectMapper = new ObjectMapper();

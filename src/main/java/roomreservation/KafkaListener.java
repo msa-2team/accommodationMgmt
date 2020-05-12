@@ -16,7 +16,7 @@ public class KafkaListener {
         public void onEventByString(@Payload Reserved reserved){
             if( reserved.getEventType().equals("Reserved")){
                 Management p = new Management();
-                p.setId(reserved.getReservationId());
+                p.setReservationId(reserved.getReservationId());
                 p.setCustomerName(reserved.getCustomerName());
                 p.setCardInfo(reserved.getCardInfo());
                 p.setCustomerPhoneNumber(reserved.getCustomerPhoneNumber());
@@ -27,7 +27,7 @@ public class KafkaListener {
             }
             else if(reserved.getEventType().equals("ReservationCanceled")){
                 Management p = new Management();
-                p.setId(reserved.getReservationId());
+                p.setReservationId(reserved.getReservationId());
                 p.setCustomerName(reserved.getCustomerName());
                 p.setCardInfo(reserved.getCardInfo());
                 p.setCustomerPhoneNumber(reserved.getCustomerPhoneNumber());
