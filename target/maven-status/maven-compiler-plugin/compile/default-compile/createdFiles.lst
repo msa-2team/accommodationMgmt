@@ -1,0 +1,15 @@
+roomreservation\Management.class
+roomreservation\ManagementListRepository.class
+roomreservation\ManagementListViewHandler.class
+roomreservation\Reserved.class
+roomreservation\ManagementController.class
+roomreservation\AbstractEvent.class
+roomreservation\ManagementRepository.class
+roomreservation\config\kafka\KafkaProcessor.class
+roomreservation\RoomConfirmed.class
+roomreservation\RoomRejected.class
+roomreservation\Application.class
+roomreservation\PolicyHandler.class
+roomreservation\AbstractEvent$1.class
+roomreservation\ManagementList.class
+roomreservation\KafkaListener.class
