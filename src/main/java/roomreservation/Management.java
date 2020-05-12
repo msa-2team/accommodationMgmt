@@ -87,7 +87,7 @@ public class Management {
 
         Payment payment = new Payment();
         payment.setCustomerName(this.getCustomerName());
-        payment.setPaymentStatus(this.getCardInfo());
+        payment.setCardInfo(this.getCardInfo());
         paymentService.requestPayment( payment);
 
     }

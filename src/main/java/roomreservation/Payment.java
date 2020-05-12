@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Payment {
 
     private Long reservationId;
-    private String paymentStatus;
+    private String cardInfo;
     private String customerName;
 
     public Long getReservationId() {
@@ -18,12 +18,12 @@ public class Payment {
         this.reservationId = reservationId;
     }
 
-    public String getPaymentStatus() {
-        return paymentStatus;
+    public String getCardInfo() {
+        return cardInfo;
     }
 
-    public void setPaymentStatus(String paymentStatus) {
-        this.paymentStatus = paymentStatus;
+    public void setCardInfo(String cardInfo) {
+        this.cardInfo = cardInfo;
     }
 
     public String getCustomerName() {
